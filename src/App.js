@@ -29,9 +29,7 @@ const todos = (state = [], action) => {
       ...state];
       break;
     case "TOGGLE_TODO":
-      return state.map(s => {
-        todo(s, action)
-      })
+      return state.map(s => todo(s, action))
       break;
     default:
       return state;
